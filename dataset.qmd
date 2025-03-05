@@ -1,0 +1,11 @@
+---
+title: Dataset
+---
+
+## `[train/validation/test]_sequences.csv`
+
+Contains sequences of RNA molecules
+
+- `target_id` (`string`):
+  - In `train_sequences.csv` IDs are formatted as `pdb_id`_`chain_id`, where `pdb_id` is the ID's entry in the [Protein Data Bank](https://www.rcsb.org/) (PDB fort short) and `chain_id`is the chain's ID of the monomer in the `.pdb` file.
+  - `sequence` (`string`): 
