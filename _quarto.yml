@@ -1,0 +1,91 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: RNA 3D Folding
+  # site-url: https://guillaumegilles.github.io/
+  # description: A website at the crossroad of technology, social science, society, economy, and history.
+  # image: 
+
+  # Github action buttons
+  # repo-url: https://github.com/guillaumegilles/guillaumegilles.github.io/
+  # repo-actions: [issue]
+
+  # Social Metadata
+  # favicon: images/cat.png
+  # twitter-card: true
+  # open-graph: true
+
+  # Google Analytics
+  # If you are forking my repo to develop content or your own purposes
+  # please disable my Google Analytics tag during development. If building
+  # your own site, replace our GA tag with your own GA tag before 
+  # deployment. This will prevent your activity being tracked and counted
+  # in our analytics dashboard. Thank you!
+  google-analytics: G-6BXJC408ED
+
+  # Website navigation
+  page-navigation: true
+  back-to-top-navigation: true
+
+  # Navbar
+  navbar:
+    logo: ../../images/cat.png
+    title: false
+    right:
+      - text: ABOUT
+        href: ../../about.html
+      - text: PROJECTS
+        href: ../../projects.html
+      - text: TEACHING
+        href: ../../teaching.html
+      - text: BLOG
+        href: ../../blog.html
+
+# Project Sidebar Navigation
+  sidebar:
+    logo: assets/header.jpeg
+    tools:
+      - icon: github
+        text: GitHub
+        href: https://github.com/guillaumegilles/RNA-3D-folding
+    contents:
+
+      - section: "INTRODUCTION"
+        contents: 
+          - href: index.qmd
+          - href: challenges.qmd
+          - href: sota.qmd
+
+      - section: "COMPUTATION"
+        contents: 
+          - href: kaggle.qmd
+    
+      - section: "APPENDICES"
+        contents: 
+          - href: glossary.qmd
+  
+  page-footer:
+    center:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/guillaumegilles/
+      - icon: file-earmark-code-fill
+        href: https://www.kaggle.com/guillaumegilles
+      - icon: github
+        href: https://github.com/guillaumegilles
+
+format:
+  html:
+    theme: flaty
+    page-layout: full
+    toc: true
+    # other-links:
+    #   - text: Présentation
+    #     icon: projector-fill
+    #     href: {{< meta title >}}
+
+    # References
+    citation-location: margin
+
+    email-obfuscation: javascript
