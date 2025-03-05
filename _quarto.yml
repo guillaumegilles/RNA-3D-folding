@@ -59,7 +59,8 @@ website:
           - href: sota.qmd
 
       - section: "COMPUTATION"
-        contents: 
+        contents:
+          - href: dataset.qmd
           - href: kaggle.qmd
     
       - section: "APPENDICES"
