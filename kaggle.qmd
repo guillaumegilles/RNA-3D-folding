@@ -1,3 +1,9 @@
 ---
 title: Kaggle competition
 ---
+
+## Performance
+
+### [Starter notebook](https://www.kaggle.com/code/guillaumegilles/ribonanzanet-3d-inference?scriptVersionId=225947626)
+
+$0.176$
