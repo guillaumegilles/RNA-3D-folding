@@ -213,6 +213,12 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./dataset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dataset</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./kaggle.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Kaggle competition</span></a>
   </div>
@@ -246,7 +252,11 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#evaluation" id="toc-evaluation" class="nav-link active" data-scroll-target="#evaluation">Evaluation</a></li>
+  <li><a href="#what-is-rna" id="toc-what-is-rna" class="nav-link active" data-scroll-target="#what-is-rna">What is RNA</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a></li>
+  <li><a href="#competition-timeline" id="toc-competition-timeline" class="nav-link" data-scroll-target="#competition-timeline">Competition Timeline</a></li>
+  <li><a href="#worldwide-collaboration" id="toc-worldwide-collaboration" class="nav-link" data-scroll-target="#worldwide-collaboration">Worldwide Collaboration</a></li>
+  <li><a href="#competitions-strategies" id="toc-competitions-strategies" class="nav-link" data-scroll-target="#competitions-strategies">Competitions Strategies</a></li>
   </ul>
 </nav>
     </div>
@@ -282,10 +292,13 @@ window.Quarto = {
 </header>
 
 
-<p>RNA is vital to life’s most essential processes, but despite its significance, predicting its 3D structure is still difficult. Deep learning breakthroughs like AlphaFold have transformed protein structure prediction, but progress with RNA has been much slower due to limited data and evaluation methods.</p>
-<p>This competition builds on recent advances, like the deep learning foundation model RibonanzaNet, which emerged from a prior Kaggle competition. Now, you’ll take on the next challenge—predicting RNA’s full 3D structure.</p>
-<p>Your work could push RNA-based medicine forward, making treatments like cancer immunotherapies and CRISPR gene editing more accessible and effective. More fundamentally, your work may be the key step in illuminating the folds and functions of natural RNA molecules, which have been called the ‘dark matter of biology’.</p>
-<p>This competition is made possible through a worldwide collaborative effort including the organizers, experimental RNA structural biologists, and predictors of the CASP16 and RNA-Puzzles competitions; Howard Hughes Medical Institute; the Institute of Protein Design; and Stanford University School of Medicine.</p>
+<p>Slightly more than a year ago, Kaggle set out to solve one of the biggest challenges remaining in biology, with <a href="https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding">Ribonanza RNA Folding</a> challenge. The goal was to create a model to predict the structure of any RNA molecule and its resulting chemical mapping profile. A foundation model emerged rom this competiton, distilled from Kagglers’ top models: <a href="https://www.biorxiv.org/content/10.1101/2024.02.24.581671v2">RibonanzaNet</a>.</p>
+<p>Unfortunately, predict RNA 3D structures are still a difficult computational task. Deep learning breakthroughs like AlphaFold have transformed protein structure prediction, but progress with RNA has been much slower due to limited data and evaluation methods.</p>
+<p>The goal of a new Kaggle competition, <a href="https://www.kaggle.com/competitions/stanford-rna-3d-folding">Stanford RNA 3D Folding</a>, is <strong>to achieve an automated RNA 3D structure prediction method that can outperform human experts</strong>.</p>
+<section id="what-is-rna" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-rna">What is RNA</h2>
+<p>RNA is vital to life’s most essential processes, which have been called the ‘dark matter of biology’</p>
+</section>
 <section id="evaluation" class="level2">
 <h2 class="anchored" data-anchor-id="evaluation">Evaluation</h2>
 <p>Submission are scored using TM-score (“<strong>T</strong>emplate <strong>M</strong>odeling” score), which goes from <span class="math inline">\(0.0\)</span> to <span class="math inline">\(1.0\)</span> where higher is better.</p>
@@ -297,6 +310,43 @@ window.Quarto = {
 <li><span class="math inline">\(L_align\)</span> is the number of aligned residues.</li>
 <li><span class="math inline">\(d_i\)</span> is the distance between the <span class="math inline">\(i_th\)</span> pair of aligned residues, in Angstroms (<span class="math inline">\(\mathring{\mathrm A}\)</span>).</li>
 <li></li>
+</ul>
+</section>
+<section id="competition-timeline" class="level2">
+<h2 class="anchored" data-anchor-id="competition-timeline">Competition Timeline</h2>
+<p>All deadlines are at 11:59 PM UTC on the corresponding day unless otherwise noted.</p>
+<ol type="1">
+<li>February 27, 2025 - Start Date.</li>
+<li>April 23, 2025 - Public leaderboard refresh &amp; Early Sharing Prizes</li>
+<li>May 22, 2025 - Entry Deadline. You must accept the competition rules before this date in order to compete.</li>
+<li>May 22, 2025 - Team Merger Deadline. This is the last day participants may join or merge teams.</li>
+<li>May 29, 2025 - Final Submission Deadline.</li>
+<li>September 24, 2025 - Competition End Date - This date is subject to change based upon the availability of new sequences. Watch the forum after the competition end for updates.</li>
+</ol>
+<p>Future Data Evaluation Timeline:</p>
+<p>After the final submission deadline (May 29, 2025) there will be periodic updates to the leaderboard to reflect up to 40 new RNA (sequences) generated after the competition has ended. New data updates that will be run against selected notebooks.</p>
+</section>
+<section id="worldwide-collaboration" class="level2">
+<h2 class="anchored" data-anchor-id="worldwide-collaboration">Worldwide Collaboration</h2>
+<p>This competition is made possible through a worldwide collaborative effort including:</p>
+<ul>
+<li>the organizers, <a href="https://www.kaggle.com/shujun717">Shujun-He</a> and <a href="https://www.kaggle.com/rhijudas">Rhiju Das</a></li>
+<li><a href="https://predictioncenter.org/casp16/index.cgi">Predictors of the CASP16</a></li>
+<li><a href="https://www.rnapuzzles.org/">RNA-Puzzles</a> competitions</li>
+<li><a href="https://www.hhmi.org/">Howard Hughes Medical Institute</a></li>
+<li><a href="https://www.ipd.uw.edu/">Institute for Protein Design</a></li>
+<li><a href="https://med.stanford.edu/">Stanford University School of Medicine</a></li>
+</ul>
+</section>
+<section id="competitions-strategies" class="level2">
+<h2 class="anchored" data-anchor-id="competitions-strategies">Competitions Strategies</h2>
+<ul>
+<li>Are there better ways to fine-tune RibonanzaNet to predict 3D structures?</li>
+<li>Humans detect information on ‘multiple sequence alignments’ of RNA that current automated methods can’t — how do we get artificial neural networks to see these patterns?</li>
+<li>Human experts have a rich knowledge of the scientific literature on prior RNA structures – can neural nets achieve and leverage this written knowledge too?</li>
+<li>For RNA’s with multiple structures, are there better ways to generate 5 predictions than just different random seeds?</li>
+<li>Human experts invest substantial efforts at inference time, sometimes creating 1000s of ‘decoy’ structures per RNA target and then using reasoning to iterate to additional structures – can’t that be automated?</li>
+<li>Can synthetic RNA structures be used to augment model training?</li>
 </ul>
 
 

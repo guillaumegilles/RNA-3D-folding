@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>RNA 3D Folding - Sate-of-the-RNArt</title>
+<title>RNA 3D Folding - Dataset</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./dataset.html" rel="next">
-<link href="./challenges.html" rel="prev">
+<link href="./kaggle.html" rel="next">
+<link href="./sota.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -125,7 +125,7 @@ gtag('config', 'G-6BXJC408ED', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">INTRODUCTION</a></li><li class="breadcrumb-item"><a href="./sota.html">Sate-of-the-RNArt</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dataset.html">COMPUTATION</a></li><li class="breadcrumb-item"><a href="./dataset.html">Dataset</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -168,7 +168,7 @@ gtag('config', 'G-6BXJC408ED', { 'anonymize_ip': true});
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./sota.html" class="sidebar-item-text sidebar-link active">
+  <a href="./sota.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sate-of-the-RNArt</span></a>
   </div>
 </li>
@@ -185,7 +185,7 @@ gtag('config', 'G-6BXJC408ED', { 'anonymize_ip': true});
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./dataset.html" class="sidebar-item-text sidebar-link">
+  <a href="./dataset.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Dataset</span></a>
   </div>
 </li>
@@ -224,19 +224,16 @@ gtag('config', 'G-6BXJC408ED', { 'anonymize_ip': true});
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#ribonanzanet" id="toc-ribonanzanet" class="nav-link active" data-scroll-target="#ribonanzanet">RibonanzaNet</a></li>
-  <li><a href="#alphafold-3" id="toc-alphafold-3" class="nav-link" data-scroll-target="#alphafold-3">AlphaFold 3</a></li>
-  <li><a href="#rhofold" id="toc-rhofold" class="nav-link" data-scroll-target="#rhofold">RhoFold+</a></li>
-  <li><a href="#eternafold" id="toc-eternafold" class="nav-link" data-scroll-target="#eternafold">EternaFold</a></li>
+  <li><a href="#trainvalidationtest_sequences.csv" id="toc-trainvalidationtest_sequences.csv" class="nav-link active" data-scroll-target="#trainvalidationtest_sequences.csv"><code>[train/validation/test]_sequences.csv</code></a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content column-body" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">INTRODUCTION</a></li><li class="breadcrumb-item"><a href="./sota.html">Sate-of-the-RNArt</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./dataset.html">COMPUTATION</a></li><li class="breadcrumb-item"><a href="./dataset.html">Dataset</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Sate-of-the-RNArt</h1>
+<h1 class="title">Dataset</h1>
 </div>
 
 
@@ -253,17 +250,16 @@ gtag('config', 'G-6BXJC408ED', { 'anonymize_ip': true});
 </header>
 
 
-<section id="ribonanzanet" class="level2">
-<h2 class="anchored" data-anchor-id="ribonanzanet">RibonanzaNet</h2>
-</section>
-<section id="alphafold-3" class="level2">
-<h2 class="anchored" data-anchor-id="alphafold-3">AlphaFold 3</h2>
-</section>
-<section id="rhofold" class="level2">
-<h2 class="anchored" data-anchor-id="rhofold">RhoFold+</h2>
-</section>
-<section id="eternafold" class="level2">
-<h2 class="anchored" data-anchor-id="eternafold">EternaFold</h2>
+<section id="trainvalidationtest_sequences.csv" class="level2">
+<h2 class="anchored" data-anchor-id="trainvalidationtest_sequences.csv"><code>[train/validation/test]_sequences.csv</code></h2>
+<p>Contains sequences of RNA molecules</p>
+<ul>
+<li><code>target_id</code> (<code>string</code>):
+<ul>
+<li>In <code>train_sequences.csv</code> IDs are formatted as <code>pdb_id</code>_<code>chain_id</code>, where <code>pdb_id</code> is the ID’s entry in the <a href="https://www.rcsb.org/">Protein Data Bank</a> (PDB fort short) and <code>chain_id</code>is the chain’s ID of the monomer in the <code>.pdb</code> file.</li>
+<li><code>sequence</code> (<code>string</code>):</li>
+</ul></li>
+</ul>
 
 
 </section>
@@ -653,13 +649,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation column-body">
   <div class="nav-page nav-page-previous">
-      <a href="./challenges.html" class="pagination-link  aria-label=" rna="" 3d="" folding="" challenges"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">RNA 3D Folding Challenges</span>
+      <a href="./sota.html" class="pagination-link  aria-label=" sate-of-the-rnart"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sate-of-the-RNArt</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./dataset.html" class="pagination-link" aria-label="Dataset">
-        <span class="nav-page-text">Dataset</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./kaggle.html" class="pagination-link" aria-label="Kaggle competition">
+        <span class="nav-page-text">Kaggle competition</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -12,27 +12,27 @@
     ]
   },
   {
-    "objectID": "challenges.html",
-    "href": "challenges.html",
-    "title": "RNA 3D Folding Challenges",
+    "objectID": "dataset.html",
+    "href": "dataset.html",
+    "title": "Dataset",
     "section": "",
-    "text": "Back to top",
-    "crumbs": [
-      "ABOUT",
-      "INTRODUCTION",
-      "RNA 3D Folding Challenges"
-    ]
-  },
-  {
-    "objectID": "kaggle.html",
-    "href": "kaggle.html",
-    "title": "Kaggle competition",
-    "section": "",
-    "text": "Back to top",
+    "text": "Contains sequences of RNA molecules\n\ntarget_id (string):\n\nIn train_sequences.csv IDs are formatted as pdb_id_chain_id, where pdb_id is the ID’s entry in the Protein Data Bank (PDB fort short) and chain_idis the chain’s ID of the monomer in the .pdb file.\nsequence (string):",
     "crumbs": [
       "ABOUT",
       "COMPUTATION",
-      "Kaggle competition"
+      "Dataset"
+    ]
+  },
+  {
+    "objectID": "dataset.html#trainvalidationtest_sequences.csv",
+    "href": "dataset.html#trainvalidationtest_sequences.csv",
+    "title": "Dataset",
+    "section": "",
+    "text": "Contains sequences of RNA molecules\n\ntarget_id (string):\n\nIn train_sequences.csv IDs are formatted as pdb_id_chain_id, where pdb_id is the ID’s entry in the Protein Data Bank (PDB fort short) and chain_idis the chain’s ID of the monomer in the .pdb file.\nsequence (string):",
+    "crumbs": [
+      "ABOUT",
+      "COMPUTATION",
+      "Dataset"
     ]
   },
   {
@@ -40,7 +40,19 @@
     "href": "index.html",
     "title": "Competition Description",
     "section": "",
-    "text": "RNA is vital to life’s most essential processes, but despite its significance, predicting its 3D structure is still difficult. Deep learning breakthroughs like AlphaFold have transformed protein structure prediction, but progress with RNA has been much slower due to limited data and evaluation methods.\nThis competition builds on recent advances, like the deep learning foundation model RibonanzaNet, which emerged from a prior Kaggle competition. Now, you’ll take on the next challenge—predicting RNA’s full 3D structure.\nYour work could push RNA-based medicine forward, making treatments like cancer immunotherapies and CRISPR gene editing more accessible and effective. More fundamentally, your work may be the key step in illuminating the folds and functions of natural RNA molecules, which have been called the ‘dark matter of biology’.\nThis competition is made possible through a worldwide collaborative effort including the organizers, experimental RNA structural biologists, and predictors of the CASP16 and RNA-Puzzles competitions; Howard Hughes Medical Institute; the Institute of Protein Design; and Stanford University School of Medicine.",
+    "text": "Slightly more than a year ago, Kaggle set out to solve one of the biggest challenges remaining in biology, with Ribonanza RNA Folding challenge. The goal was to create a model to predict the structure of any RNA molecule and its resulting chemical mapping profile. A foundation model emerged rom this competiton, distilled from Kagglers’ top models: RibonanzaNet.\nUnfortunately, predict RNA 3D structures are still a difficult computational task. Deep learning breakthroughs like AlphaFold have transformed protein structure prediction, but progress with RNA has been much slower due to limited data and evaluation methods.\nThe goal of a new Kaggle competition, Stanford RNA 3D Folding, is to achieve an automated RNA 3D structure prediction method that can outperform human experts.",
+    "crumbs": [
+      "ABOUT",
+      "INTRODUCTION",
+      "Competition Description"
+    ]
+  },
+  {
+    "objectID": "index.html#what-is-rna",
+    "href": "index.html#what-is-rna",
+    "title": "Competition Description",
+    "section": "What is RNA",
+    "text": "What is RNA\nRNA is vital to life’s most essential processes, which have been called the ‘dark matter of biology’",
     "crumbs": [
       "ABOUT",
       "INTRODUCTION",
@@ -57,6 +69,78 @@
       "ABOUT",
       "INTRODUCTION",
       "Competition Description"
+    ]
+  },
+  {
+    "objectID": "index.html#competition-timeline",
+    "href": "index.html#competition-timeline",
+    "title": "Competition Description",
+    "section": "Competition Timeline",
+    "text": "Competition Timeline\nAll deadlines are at 11:59 PM UTC on the corresponding day unless otherwise noted.\n\nFebruary 27, 2025 - Start Date.\nApril 23, 2025 - Public leaderboard refresh & Early Sharing Prizes\nMay 22, 2025 - Entry Deadline. You must accept the competition rules before this date in order to compete.\nMay 22, 2025 - Team Merger Deadline. This is the last day participants may join or merge teams.\nMay 29, 2025 - Final Submission Deadline.\nSeptember 24, 2025 - Competition End Date - This date is subject to change based upon the availability of new sequences. Watch the forum after the competition end for updates.\n\nFuture Data Evaluation Timeline:\nAfter the final submission deadline (May 29, 2025) there will be periodic updates to the leaderboard to reflect up to 40 new RNA (sequences) generated after the competition has ended. New data updates that will be run against selected notebooks.",
+    "crumbs": [
+      "ABOUT",
+      "INTRODUCTION",
+      "Competition Description"
+    ]
+  },
+  {
+    "objectID": "index.html#worldwide-collaboration",
+    "href": "index.html#worldwide-collaboration",
+    "title": "Competition Description",
+    "section": "Worldwide Collaboration",
+    "text": "Worldwide Collaboration\nThis competition is made possible through a worldwide collaborative effort including:\n\nthe organizers, Shujun-He and Rhiju Das\nPredictors of the CASP16\nRNA-Puzzles competitions\nHoward Hughes Medical Institute\nInstitute for Protein Design\nStanford University School of Medicine",
+    "crumbs": [
+      "ABOUT",
+      "INTRODUCTION",
+      "Competition Description"
+    ]
+  },
+  {
+    "objectID": "index.html#competitions-strategies",
+    "href": "index.html#competitions-strategies",
+    "title": "Competition Description",
+    "section": "Competitions Strategies",
+    "text": "Competitions Strategies\n\nAre there better ways to fine-tune RibonanzaNet to predict 3D structures?\nHumans detect information on ‘multiple sequence alignments’ of RNA that current automated methods can’t — how do we get artificial neural networks to see these patterns?\nHuman experts have a rich knowledge of the scientific literature on prior RNA structures – can neural nets achieve and leverage this written knowledge too?\nFor RNA’s with multiple structures, are there better ways to generate 5 predictions than just different random seeds?\nHuman experts invest substantial efforts at inference time, sometimes creating 1000s of ‘decoy’ structures per RNA target and then using reasoning to iterate to additional structures – can’t that be automated?\nCan synthetic RNA structures be used to augment model training?",
+    "crumbs": [
+      "ABOUT",
+      "INTRODUCTION",
+      "Competition Description"
+    ]
+  },
+  {
+    "objectID": "kaggle.html",
+    "href": "kaggle.html",
+    "title": "Kaggle competition",
+    "section": "",
+    "text": "\\(0.176\\)",
+    "crumbs": [
+      "ABOUT",
+      "COMPUTATION",
+      "Kaggle competition"
+    ]
+  },
+  {
+    "objectID": "kaggle.html#performance",
+    "href": "kaggle.html#performance",
+    "title": "Kaggle competition",
+    "section": "",
+    "text": "\\(0.176\\)",
+    "crumbs": [
+      "ABOUT",
+      "COMPUTATION",
+      "Kaggle competition"
+    ]
+  },
+  {
+    "objectID": "challenges.html",
+    "href": "challenges.html",
+    "title": "RNA 3D Folding Challenges",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "ABOUT",
+      "INTRODUCTION",
+      "RNA 3D Folding Challenges"
     ]
   },
   {

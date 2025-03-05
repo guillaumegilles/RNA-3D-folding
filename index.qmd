@@ -52,11 +52,12 @@ After the final submission deadline (May 29, 2025) there will be periodic update
 ## Worldwide Collaboration
 
 This competition is made possible through a worldwide collaborative effort including:
-- the organizers, [Shujun-He](https://github.com/Shujun-He) and [Rhiju Das](https://github.com/rhiju)
+
+- the organizers, [Shujun-He](https://www.kaggle.com/shujun717) and [Rhiju Das](https://www.kaggle.com/rhijudas)
 - [Predictors of the CASP16](https://predictioncenter.org/casp16/index.cgi)
 - [RNA-Puzzles](https://www.rnapuzzles.org/) competitions
 - [Howard Hughes Medical Institute](https://www.hhmi.org/)
-- [Institute for Protein Design)(https://www.ipd.uw.edu/)
+- [Institute for Protein Design](https://www.ipd.uw.edu/)
 - [Stanford University School of Medicine](https://med.stanford.edu/)
 
 ## Competitions Strategies
