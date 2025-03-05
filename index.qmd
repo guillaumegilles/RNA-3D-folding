@@ -10,13 +10,15 @@ categories:
   - Deep Learning
 ---
 
-RNA is vital to life’s most essential processes, but despite its significance, predicting its 3D structure is still difficult. Deep learning breakthroughs like AlphaFold have transformed protein structure prediction, but progress with RNA has been much slower due to limited data and evaluation methods.
+Slightly more than a year ago, Kaggle set out to solve one of the biggest challenges remaining in biology, with [Ribonanza RNA Folding](https://www.kaggle.com/competitions/stanford-ribonanza-rna-folding) challenge. The goal was to create a model to predict the structure of any RNA molecule and its resulting chemical mapping profile. A foundation model emerged rom this competiton, distilled from Kagglers’ top models: [RibonanzaNet](https://www.biorxiv.org/content/10.1101/2024.02.24.581671v2).
 
-This competition builds on recent advances, like the deep learning foundation model RibonanzaNet, which emerged from a prior Kaggle competition. Now, you’ll take on the next challenge—predicting RNA’s full 3D structure.
+Unfortunately, predict RNA 3D structures are still a difficult computational task. Deep learning breakthroughs like AlphaFold have transformed protein structure prediction, but progress with RNA has been much slower due to limited data and evaluation methods.
 
-Your work could push RNA-based medicine forward, making treatments like cancer immunotherapies and CRISPR gene editing more accessible and effective. More fundamentally, your work may be the key step in illuminating the folds and functions of natural RNA molecules, which have been called the 'dark matter of biology'.
+The goal of a new Kaggle competition, [Stanford RNA 3D Folding](https://www.kaggle.com/competitions/stanford-rna-3d-folding), is **to achieve an automated RNA 3D structure prediction method that can outperform human experts**.
 
-This competition is made possible through a worldwide collaborative effort including the organizers, experimental RNA structural biologists, and predictors of the CASP16 and RNA-Puzzles competitions; Howard Hughes Medical Institute; the Institute of Protein Design; and Stanford University School of Medicine.
+## What is RNA
+
+RNA is vital to life’s most essential processes, which have been called the 'dark matter of biology'
 
 ## Evaluation
 
@@ -31,3 +33,37 @@ Where:
 - $L_align$ is the number of aligned residues.
 - $d_i$ is the distance between the $i_th$ pair of aligned residues, in Angstroms ($\mathring{\mathrm A}$).
 - 
+
+## Competition Timeline
+
+All deadlines are at 11:59 PM UTC on the corresponding day unless otherwise noted.
+
+1. February 27, 2025 - Start Date.
+2. April 23, 2025 - Public leaderboard refresh & Early Sharing Prizes
+3. May 22, 2025 - Entry Deadline. You must accept the competition rules before this date in order to compete.
+4. May 22, 2025 - Team Merger Deadline. This is the last day participants may join or merge teams.
+5. May 29, 2025 - Final Submission Deadline.
+6. September 24, 2025 - Competition End Date - This date is subject to change based upon the availability of new sequences. Watch the forum after the competition end for updates.
+
+Future Data Evaluation Timeline:
+
+After the final submission deadline (May 29, 2025) there will be periodic updates to the leaderboard to reflect up to 40 new RNA (sequences) generated after the competition has ended. New data updates that will be run against selected notebooks.
+
+## Worldwide Collaboration
+
+This competition is made possible through a worldwide collaborative effort including:
+- the organizers, [Shujun-He](https://github.com/Shujun-He) and [Rhiju Das](https://github.com/rhiju)
+- [Predictors of the CASP16](https://predictioncenter.org/casp16/index.cgi)
+- [RNA-Puzzles](https://www.rnapuzzles.org/) competitions
+- [Howard Hughes Medical Institute](https://www.hhmi.org/)
+- [Institute for Protein Design)(https://www.ipd.uw.edu/)
+- [Stanford University School of Medicine](https://med.stanford.edu/)
+
+## Competitions Strategies
+
+- Are there better ways to fine-tune RibonanzaNet to predict 3D structures?
+- Humans detect information on ‘multiple sequence alignments’ of RNA that current automated methods can’t — how do we get artificial neural networks to see these patterns?
+- Human experts have a rich knowledge of the scientific literature on prior RNA structures – can neural nets achieve and leverage this written knowledge too?
+- For RNA's with multiple structures, are there better ways to generate 5 predictions than just different random seeds?
+- Human experts invest substantial efforts at inference time, sometimes creating 1000s of 'decoy' structures per RNA target and then using reasoning to iterate to additional structures -- can't that be automated?
+- Can synthetic RNA structures be used to augment model training?
